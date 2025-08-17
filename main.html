@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Architecture Showcase</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Architecture Webpage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
+      display: flex;
+      justify-content: center;
+      background-color: #f0f0f0;
+      margin: 20px 0;
     }
-
     .container {
       width: 1100px;
-      margin: 0 auto;
-      background-color: #ffffff;
+      background-color: #fff;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
     .imageContainer {
       text-align: center;
       margin-bottom: 30px;
     }
-
     .imageContainer img {
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
     }
-
-    td {
+    table td {
       vertical-align: top;
-      padding: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
     }
-
-    td img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
+    table td:first-child,
+    table td:last-child {
+      width: 200px;
     }
-
-    .text-column {
+    table td:nth-child(2) {
+      width: 600px;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.5;
       color: #333;
     }
+    table img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="imageContainer">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1100&q=80" alt="Modern Architecture" />
+    </div>
 
-    tr:nth-child(even) {
-      background-color
+    <table>
+      <tr>
+        <td>
+          <img src="https://images.unsplash.com/photo-1549395154-863bdb8cde94?auto=format&fit=crop&w=200&q=80" alt="Building facade 1" />
+        </td>
+        <td>
+          <h2>Innovative Design</h2>
+          <p>The modern architectural design combines functionality with aesthetics, creating spaces that inspire and delight. Sustainable materials and innovative engineering bring this vision to life.</p>
+        </td>
+        <td>
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=200&q=80" alt="Building facade 2" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=200&q=80" alt="Interior 1" />
+        </td>
+        <td>
+          <h2>Architectural Details</h2>
+          <p>Every corner, every line is carefully crafted to balance beauty and function. From lighting to textures, details elevate the living experience and connect inhabitants with their environment.</p>
+        </td>
+        <td>
+          <img src="https://images.unsplash.com/photo-1486308510493-cb8d41f36f7d?auto=format&fit=crop&w=200&q=80" alt="Interior 2" />
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+</body>
+</html>
